@@ -26,5 +26,7 @@ jieke@jieke-mini:~/Downloads/zjut_wifi_login$ ip address
 `wlan0` 即为所需的 interface
 
 ## Daemonize by Docker
+```sh
 sudo docker build -t jieke/autologin
 sudo docker run -d --name zjut_wifi_autologin --restart unless-stopped --network host jieke/autologin [username] [passwd] [interface]
+```
