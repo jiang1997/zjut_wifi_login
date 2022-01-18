@@ -1,6 +1,6 @@
 # zjut_wifi_login
 ## wifi login in CS building ZJUT
-
+---
 # 使用方法
 ## 直接使用
 `./bash entrypoint.sh [username] [passwd] [interface]`
