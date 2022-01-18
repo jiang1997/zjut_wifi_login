@@ -27,11 +27,12 @@ jieke@jieke-mini:~/Downloads/zjut_wifi_login$ ip address
 
 ## Daemonize by Docker
 ```sh
-sudo docker build -t jieke/autologin
+sudo docker build -t jieke/autologin .
 sudo docker run -d --name zjut_wifi_autologin --restart unless-stopped --network host jieke/autologin [username] [passwd] [interface]
 ```
-
-ps 有线网登录只需修改脚本文件中的
+~~ps 有线网登录只需修改脚本文件中的
 `"http://192.168.8.1:801/eportal/?c=Portal&a=login&callback=dr1003&login_method=1&user_account=,0,$1&user_password=$2&wlan_user_ip=$address"`
 为
-`"http://192.168.6.1:801/eportal/?c=Portal&a=login&callback=dr1003&login_method=1&user_account=,0,$1&user_password=$2&wlan_user_ip=$address"`
+`"http://192.168.6.1:801/eportal/?c=Portal&a=login&callback=dr1003&login_method=1&user_account=,0,$1&user_password=$2&wlan_user_ip=$address"`~~
+
+经测试,修改不是必要
